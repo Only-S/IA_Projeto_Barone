@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações de Jogos</title>
+
+    <!-- CSS inserido diretamente no HTML -->
+    <style>
+        /* Estiliza o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centraliza o conteúdo e define um layout mais compacto */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Título da página */
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo dos labels do formulário */
+        form label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Estilo dos campos de input e select */
+        form select, form input[type="radio"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Estiliza os campos de rádio */
+        form input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        /* Botão de submissão */
+        form input[type="submit"] {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Estilo da lista de jogos recomendados */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Título das recomendações */
+        h2 {
+            margin-top: 40px;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selecione as Suas Preferências</h1>
+        <form method="POST">
+            <label for="valor">Você Deseja um Jogo em Qual Faixa de Valor?</label>
+            <select name="valor" id="valor">
+                <option value="Grátis">Grátis</option>
+                <option value="Barato">Barato</option>
+                <option value="Médio">Médio</option>
+                <option value="Caro">Caro</option>
+            </select><br>
+
+            <label for="plataforma">Em Qual Plataforma Você Irá Jogar?</label>
+            <select name="plataforma" id="plataforma">
+                <option value="66d8e49da84429342c093999">PC</option>
+                <option value="66e0f45da62a8d19625a2d6b">PS4</option>
+                <option value="66e0f46ba62a8d19625a2d6c">PS5</option>
+                <option value="66e0f477a62a8d19625a2d6d">Xbox One</option>
+                <option value="66e0f487a62a8d19625a2d6e">Xbox Series</option>
+                <option value="66e0f498a62a8d19625a2d6f">Nintendo Switch</option>
+            </select><br>
+
+            <label for="objetivo">Qual é o seu objetivo com esse jogo?</label>
+            <select name="objetivo" id="objetivo">
+                <option value="66d8e5735bd0216532f8b875">Diversão</option>
+                <option value="66e0f61ea62a8d19625a2d7f">Passar o tempo</option>
+                <option value="66e0f629a62a8d19625a2d80">Me envolver com o jogo</option>
+                <option value="66e0f662a62a8d19625a2d81">Jogar com amigos</option>
+            </select><br>
+
+            <label for="grafico">Qual seria o estilo gráfico preferível?</label>
+            <select name="grafico" id="grafico">
+                <option value="66d8e569a84429342c09399b">Anime</option>
+                <option value="66e0f5aaa62a8d19625a2d79">Pixel Art</option>
+                <option value="66e0f5b7a62a8d19625a2d7a">Realista</option>
+                <option value="66e0f5c6a62a8d19625a2d7b">Voxel</option>
+                <option value="66e107dd838c621b68076962">Cartoon</option>
+            </select><br>
+
+            <label for="lvljogabilidade">Você seria um jogador:</label>
+            <select name="lvljogabilidade" id="lvljogabilidade">
+                <option value="66d8e523a84429342c09399a">Experiente</option>
+                <option value="66e0f5e4a62a8d19625a2d7c">Intermediário</option>
+                <option value="66e0f5f4a62a8d19625a2d7d">Casual</option>
+                <option value="66e0f5fca62a8d19625a2d7e">Novato</option>
+            </select><br>
+
+            <label for="genero">Qual desses Gênero mais lhe agrada?</label>
+            <select name="genero" id="genero">
+                <option value="66d8e9255bf9b45f18f1d075">JRPG</option>
+                <option value="66e0f530a62a8d19625a2d74">RPG</option>
+                <option value="66e0f539a62a8d19625a2d75">Storytell</option>
+                <option value="'66e0f54ca62a8d19625a2d76">Ação</option>
+                <option value="66e0f556a62a8d19625a2d77">Souls-like</option>
+                <option value="66e0f565a62a8d19625a2d78">Rogue-like</option>
+                <option value="66e106bcf2486bf3de0d5010">FPS</option>
+            </select><br>
+
+            <label for="experiencia">Que tipo de experiência você está procurando?</label>
+            <select name="experiencia" id="experiencia">
+                <option value="66d8e5d15bd0216532f8b876">História emocionante</option>
+                <option value="66e0f4bfa62a8d19625a2d70">Gameplay divertida</option>
+                <option value="66e0f4caa62a8d19625a2d71">Alta competitividade</option>
+                <option value="66e0f4e5a62a8d19625a2d72">Liberdade na gameplay</option>
+                <option value="66e0f50ca62a8d19625a2d73">Mecânicas profundas</option>
+                <option value="66e10129504e03d24b7f8fce">História triste</option>
+            </select><br>
+
+            <label>Prefere um jogo Online ou Offline?</label>
+            <input type="radio" name="online_offline" value="True"> Online
+            <input type="radio" name="online_offline" value="False"> Offline<br>
+
+            <label>Aceita um jogo retrô?</label>
+            <input type="radio" name="retro" value="True"> Sim
+            <input type="radio" name="retro" value="False"> Não<br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        {% if jogos %}
+            <h2>Jogos recomendados:</h2>
+            <ul>
+                {% for jogo in jogos %}
+                    <li>{{ jogo }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>

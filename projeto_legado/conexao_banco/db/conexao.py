@@ -1,8 +1,9 @@
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
+#Made by Giovane_Grandi : 12345
 #URL com as credenciais do meu usuário do banco
-uri = "mongodb+srv://giovane_grandi:12345@atitus.ztwya.mongodb.net/?retryWrites=true&w=majority&appName=Atitus"
+uri = "mongodb+srv://<db_username>:<db_password>@atitus.ztwya.mongodb.net/?retryWrites=true&w=majority&appName=Atitus"
 
 #Função resposnável pela conexão com o banco do mongo
 def conecta_banco():

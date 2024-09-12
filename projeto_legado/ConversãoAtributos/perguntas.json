@@ -1,0 +1,28 @@
+{
+    "perguntas": [
+        {
+            "id": 1,
+            "texto": "Você gosta de ação?",
+            "respostas": [
+                {"texto": "Sim", "caracteristicas": {"acao": 1, "aventura": 0, "comedia": 0, "rpg": 0}},
+                {"texto": "Não", "caracteristicas": {"acao": 0, "aventura": 0, "comedia": 0, "rpg": 0}}
+            ]
+        },
+        {
+            "id": 2,
+            "texto": "Você gosta de aventura?",
+            "respostas": [
+                {"texto": "Sim", "caracteristicas": {"acao": 0, "aventura": 1, "comedia": 0, "rpg": 0}},
+                {"texto": "Não", "caracteristicas": {"acao": 0, "aventura": 0, "comedia": 0, "rpg": 0}}
+            ]
+        },
+        {
+            "id": 3,
+            "texto": "Você gosta de comédia?",
+            "respostas": [
+                {"texto": "Sim", "caracteristicas": {"acao": 0, "aventura": 0, "comedia": 1, "rpg": 0}},
+                {"texto": "Não", "caracteristicas": {"acao": 0, "aventura": 0, "comedia": 0, "rpg": 0}}
+            ]
+        }
+    ]
+}
